@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="icon" href="logo.png">
+    <title>SipNPlay</title>
+</head>
+
+<body>
+
+    <header>
+
+        <!-- <a href="#" class="logo"><img src="./logo.png"></a> -->
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#">Menu</a>
+            <a href="#">Board Game Collection</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOME SECTION -->
+        <section class="home" id="home">
+
+            <div class="home-img">
+                <img src="./coffee.png" alt="coffee">
+            </div>
+
+            <div class="home-content">
+                <h3>Hello! Welcome to</h3>
+                <h1>Sip-N-Play</h1>
+                <h3> Enjoy our <span id="typed"></span></h3>
+                <p>Park Slope’s first board game cafe</p>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+        // STRING TYPER
+        const typed = new Typed('#typed', {
+            strings: ['coffee', 'espresso', 'boba', 'sandwiches', 'snacks'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+    </script>
+    <!-- <script src="./script.js"></script> -->
+</body>
+
+</html>
